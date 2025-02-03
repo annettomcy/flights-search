@@ -9,10 +9,10 @@ import {
   DEFAULT_FLIGHT_SEARCH_PARAMS,
   TRIP_TYPES,
 } from "../../constants";
-import AirportSearch from "../common/AirportSearch";
 import CustomDropdown from "../common/CustomDropdown";
-import DateSelect from "../common/DateSelect";
-import PassengerSelect from "../common/PassengerSelect";
+import AirportSearch from "./AirportSearch";
+import DateSelect from "./DateSelect";
+import PassengerSelect from "./PassengerSelect";
 
 const FlightSearch = ({ onSearch }) => {
   const [tripType, setTripType] = useState("one_way");

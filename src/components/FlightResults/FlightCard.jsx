@@ -178,7 +178,6 @@ const FlightCard = ({ itinerary }) => {
           {itinerary.legs.map((leg) => (
             <Box key={leg.id}>
               <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
-                {/* Flight Details */}
                 <Box sx={{ display: "flex", gap: 2 }}>
                   <Box sx={{ flex: 1 }}>
                     <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
@@ -222,8 +221,6 @@ const FlightCard = ({ itinerary }) => {
                     </Typography>
                   </Box>
                 </Box>
-
-                {/* Layover Section */}
                 {leg.stopCount > 0 && (
                   <Box sx={{ pl: 4 }}>
                     <LayoverSection segments={leg.segments} />
